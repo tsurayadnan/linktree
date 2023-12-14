@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.avatar{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url(../images/Fantasy\,\ Japanese\,\ Demon\,\ Yokai\,\ Art\,\ Digital\ Art\ 4k\ wallpaper\ -\ Mocah\ HD\ Wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.name{
+    margin-top: .5rem;
+}
+
+.list{
+    /*untuk menghilangkan . pada ul list */
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.list li{
+    background-color: #B6C4B6;
+    padding: .8rem 4rem;
+    border-radius: 2rem;
+    width: 100%;
+    text-align: center;
+
+}
+.list li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+/*membuat kondisi ketika cursor berada di list item*/
+.list li:hover{
+    filter: brightness(80%);
+}
+/*mmbuat kondisi ketika list item di klik */
+.list li:active{
+    filter: brightness(95%);
+}
